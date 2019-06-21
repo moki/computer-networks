@@ -1,4 +1,4 @@
-TARGET = main.out
+TARGET = server.out
 SRCS = $(wildcard ./*.c) $(wildcard ./*/*.c)
 OBJS = $(SRCS: ./*/*.c=*.o)
 
