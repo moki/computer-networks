@@ -92,6 +92,7 @@ int server_listen(server_attr_t *server_attr) {
 	hints.ai_socktype = server_attr->transport_proto;
 	hints.ai_family   = server_attr->internet_proto;
 	hints.ai_flags	  = AI_PASSIVE;
+	reuse_addr	  = 1;
 
 	err = getaddrinfo(NULL, server_attr->port, &hints, &server);
 	if (err) {
