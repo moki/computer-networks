@@ -1,1 +1,11 @@
 Computer Networks
+
+Basics:
+|
+*--Server:
+|  |
+|  *--TCP/IP:
+|     |
+|     *--Sequential server: seq-tcpip/
+|     |
+|     *--New thread for each peer: thread-per-peer-tcpip/
