@@ -13,9 +13,6 @@
 
 #include "server.h"
 
-#define BACKLOG (20)
-#define STDIN_FD (0)
-
 static void usage(char **arguments);
 
 static char *welcome_message = "Hello Dear Peer.\n";
@@ -43,6 +40,7 @@ int main(int argc, char **argv) {
 	server_attr_t server_config;
 	server_attr_init(&server_config);
 	server_attr_setport(&server_config, argv[1]);
+	server_attr_setbacklog(&server_config, 100);
 	server_attr_setinternetproto(&server_config, AF_UNSPEC);
 	server_attr_settransportproto(&server_config, SOCK_STREAM);
 

@@ -13,6 +13,8 @@ extern int server_attr_settransportproto(server_attr_t *server_attr, int protoco
 
 extern int server_attr_setinternetproto(server_attr_t *server_attr, int protocol);
 
+extern int server_attr_setbacklog(server_attr_t *server_attr, int backlog);
+
 extern int server_attr_init(server_attr_t *server_attr);
 
 extern int server_listen(server_attr_t *server_attr);

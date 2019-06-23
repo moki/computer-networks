@@ -42,6 +42,15 @@ int server_attr_setinternetproto(server_attr_t *server_attr, int protocol) {
 	return 0;
 }
 
+int server_attr_setbacklog(server_attr_t *server_attr, int backlog) {
+	if (!server_attr)
+		return -1;
+	if (backlog < 0)
+		return -1;
+	server_attr->backlog = backlog;
+	return 0;
+}
+
 int server_attr_init(server_attr_t *server_attr) {
 	if (!server_attr)
 		return -1;
