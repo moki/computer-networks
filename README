@@ -4,7 +4,10 @@ Basics:
 |
 *--Server:
 |  |
-|  *--TCP/IP:
+|  *--*---------------------TCP/IP--------------------------*
+|     | Dive into basic concurrency control in the networks |
+|     |	at the server side				    |
+|     *-----------------------------------------------------*
 |     |
 |     *--Sequential server: seq-tcpip/
 |     |
